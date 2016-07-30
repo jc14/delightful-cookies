@@ -20,7 +20,7 @@ module.exports = {
 		// Finds the "AuthToken" cookie and returns it
 		let result;
 		cookies.forEach(cookie => {
-			if(cookie.name === 'cookieName'){
+			if(cookie.name === cookieName){
 				result = cookie;
 			}
 		})
