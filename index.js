@@ -27,9 +27,13 @@ module.exports = {
 		return result;
 	},
 	// Sets a cookie with the desired information. Life is in milliseconds.
-	set: function(name, value, life){
+	set: function(name, value, lifetime){
 		var date = new Date();
-		date.setTime(date.getTime() + life);
-		document.cookie = `${name}=${value}; expires=${date.toGMTString()}`
+		date.setTime(date.getTime() + lifetime);
+		var cookie = `${name}=${value}; ` ;
+		if(!lifetime)	
+			cookie += `expires=${date.toGMTString()}`;
+
+		document.cookie = cookie
 	}
 }

@@ -1,4 +1,36 @@
 # delightful-cookies
 A standalone module for dealing with cookies client side.
-## Cookies for all!
-cookies every freaking where...
+
+##Example
+```javascript
+var dc = require('delightful-cookies');
+
+dc.set('Token', 'j981hf8h1duhsad', 120000);
+
+var cookie = dc.get('Token');
+```
+
+##Methods
+
+####get(cookieName)
+returns a cookie object with two properties.
+```javascript
+{
+ name: 'CookieName',
+ value: 'Hash'
+}
+```
+
+####getAll()
+Retrieves all cookies in the browser as an array of cookie objects.
+```javascript
+var cookies = dc.getAll()
+// cookies => [{name: 'cookie', value: 'j9812h9ufbwad79'}, {name: 'cookie2', value: '8932hiuhasfdu'}]
+```
+
+####set(name, value, lifetime)
+creates a cookie with name and value that will last for lifetime. Lifetime is in milliseconds.
+if lifetime is not set, the cookie will last forever.
+```javascript
+dc.set('Token', 'oisudfjaf89h12fds', 60000);
+```
