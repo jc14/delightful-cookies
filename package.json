@@ -1,0 +1,24 @@
+{
+  "name": "delightful-cookies",
+  "version": "1.0.0",
+  "description": "A standalone module for dealing with cookies client side.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jc14/delightful-cookies.git"
+  },
+  "keywords": [
+    "cookie-jar",
+    "cookies",
+    "client"
+  ],
+  "author": "Jordan Campbell (http://jcampbell.tech)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jc14/delightful-cookies/issues"
+  },
+  "homepage": "https://github.com/jc14/delightful-cookies#readme"
+}
