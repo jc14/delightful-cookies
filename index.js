@@ -35,5 +35,9 @@ module.exports = {
 			cookie += `expires=${date.toGMTString()}`;
 
 		document.cookie = cookie
+	},
+
+	remove: function(cookieName) {
+		document.cookie = cookieName + '=;expires=Fri, 19 Mar 1993 00:00:00 GMT';
 	}
 }
