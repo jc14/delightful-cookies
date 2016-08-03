@@ -30,14 +30,22 @@ module.exports = {
 	set: function(name, value, lifetime){
 		var date = new Date();
 		date.setTime(date.getTime() + lifetime);
-		var cookie = `${name}=${value}; ` ;
-		if(!lifetime)	
+		var cookie = `${name}=${value}; `;
+		if(lifetime) {
+			console.log("lifetime", lifetime)
 			cookie += `expires=${date.toGMTString()}`;
+		}
 
 		document.cookie = cookie
 	},
 
 	remove: function(cookieName) {
 		document.cookie = cookieName + '=;expires=Fri, 19 Mar 1993 00:00:00 GMT';
+	},
+
+	removeAll: function() {
+		this.getAll().forEach(cookie => {
+			document.cookie = cookie.name + '=;expires=Fri, 19 Mar 1993 00:00:00 GMT';
+		})
 	}
 }
