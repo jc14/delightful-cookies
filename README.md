@@ -31,10 +31,10 @@ var cookies = dc.getAll()
 ```
 
 ####set(name, value[, lifetime])
-creates a cookie with name and value that will last until lifetime in milliseconds.
+creates a cookie with name and value that will last until lifetime in minutes.
 if lifetime is not set, the cookie will last forever.
 ```javascript
-dc.set('Token', 'oisudfjaf89h12fds', 60000);
+dc.set('Token', 'oisudfjaf89h12fds'[, 15]);
 ```
 
 ####remove(name)

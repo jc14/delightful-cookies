@@ -26,8 +26,9 @@ module.exports = {
 		})
 		return result.value;
 	},
-	// Sets a cookie with the desired information. Life is in milliseconds.
+	// Sets a cookie with the desired information. Life is in minutes.
 	set: function(name, value, lifetime){
+		lifetime = lifetime * 60 * 1000;
 		var date = new Date();
 		date.setTime(date.getTime() + lifetime);
 		var cookie = `${name}=${value}; `;
