@@ -42,3 +42,9 @@ Removes the cookie that matches the name provided.
 ```javascript
 dc.remove('Token');
 ```
+
+####removeAll()
+Removes all cookies from browser.
+```javascript
+dc.removeAll()
+```
