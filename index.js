@@ -24,7 +24,7 @@ module.exports = {
 				result = cookie;
 			}
 		})
-		return result;
+		return result.value;
 	},
 	// Sets a cookie with the desired information. Life is in milliseconds.
 	set: function(name, value, lifetime){
