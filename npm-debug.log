@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\Russell\\Documents\\1-Work\\Packages\\delightful-cookies',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Russell\AppData\Roaming\npm-cache\delightful-cookies\1.2.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Russell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle delightful-cookies@1.2.0~prepublish: delightful-cookies@1.2.0
+11 silly lifecycle delightful-cookies@1.2.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Russell\\AppData\\Roaming\\npm-cache\\delightful-cookies\\1.2.0\\package.tgz',
+12 verbose tar pack   'C:\\Users\\Russell\\Documents\\1-Work\\Packages\\delightful-cookies' ]
+13 verbose tarball C:\Users\Russell\AppData\Roaming\npm-cache\delightful-cookies\1.2.0\package.tgz
+14 verbose folder C:\Users\Russell\Documents\1-Work\Packages\delightful-cookies
+15 verbose addLocalTarball adding from inside cache C:\Users\Russell\AppData\Roaming\npm-cache\delightful-cookies\1.2.0\package.tgz
+16 verbose correctMkdir C:\Users\Russell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd delightful-cookies@1.2.0
+18 verbose afterAdd C:\Users\Russell\AppData\Roaming\npm-cache\delightful-cookies\1.2.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Russell\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Russell\AppData\Roaming\npm-cache\delightful-cookies\1.2.0\package\package.json written
+21 silly publish { name: 'delightful-cookies',
+21 silly publish   version: '1.2.0',
+21 silly publish   description: 'A standalone module for dealing with cookies client side.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/jc14/delightful-cookies.git' },
+21 silly publish   keywords: [ 'cookie-jar', 'cookies', 'client' ],
+21 silly publish   author: { name: 'Jordan Campbell', url: 'http://jcampbell.tech' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/jc14/delightful-cookies/issues' },
+21 silly publish   homepage: 'https://github.com/jc14/delightful-cookies#readme',
+21 silly publish   readme: '# delightful-cookies\r\nA standalone module for dealing with cookies client side.\r\n\r\n##Example\r\n```javascript\r\nvar dc = require(\'delightful-cookies\');\r\n\r\ndc.set(\'Token\', \'j981hf8h1duhsad\', 120000);\r\n\r\nvar cookie = dc.get(\'Token\');\r\n\r\ndc.remove(\'Token\');\r\n```\r\n\r\n##Methods\r\n\r\n####get(cookieName)\r\nreturns a cookie object with two properties.\r\n```javascript\r\n{\r\n name: \'CookieName\',\r\n value: \'Hash\'\r\n}\r\n```\r\n\r\n####getAll()\r\nRetrieves all cookies in the browser as an array of cookie objects.\r\n```javascript\r\nvar cookies = dc.getAll()\r\n// cookies => [{name: \'cookie\', value: \'j9812h9ufbwad79\'}, {name: \'cookie2\', value: \'8932hiuhasfdu\'}]\r\n```\r\n\r\n####set(name, value[, lifetime])\r\ncreates a cookie with name and value that will last until lifetime in minutes.\r\nif lifetime is not set, the cookie will last forever.\r\n```javascript\r\ndc.set(\'Token\', \'oisudfjaf89h12fds\'[, 15]);\r\n```\r\n\r\n####remove(name)\r\nRemoves the cookie that matches the name provided.\r\n```javascript\r\ndc.remove(\'Token\');\r\n```',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '8e05112fed87382a68c82eb3369d7e34f5fce9f3',
+21 silly publish   _id: 'delightful-cookies@1.2.0',
+21 silly publish   _shasum: '0f5582f94f62ff149389fe6a2de712ae973c273d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name delightful-cookies
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'delightful-cookies',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'delightful-cookies',
+26 silly mapToRegistry   name: 'delightful-cookies',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/delightful-cookies
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Russell\AppData\Roaming\npm-cache\delightful-cookies\1.2.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/delightful-cookies
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 4:07:02 PM
+33 verbose request using bearer token for auth
+34 verbose request id 0b8f60bd63b533e2
+35 http request PUT https://registry.npmjs.org/delightful-cookies
+36 http 403 https://registry.npmjs.org/delightful-cookies
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 03 Aug 2016 21:07:03 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-dfw1837-DFW',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1470258422.827211,VS0,VE997',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\Russell\AppData\Roaming\npm-cache\registry.npmjs.org\delightful-cookies on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.2.0." : delightful-cookies
+40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+40 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+40 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid delightful-cookies
+43 verbose cwd C:\Users\Russell\Documents\1-Work\Packages\delightful-cookies
+44 error Windows_NT 10.0.10586
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.3.0
+47 error npm  v3.10.3
+48 error code E403
+49 error "You cannot publish over the previously published version 1.2.0." : delightful-cookies
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
