@@ -11,6 +11,11 @@ module.exports = {
 				value: cookieArray[1],
 			}
 		})
+		// Check if cookies array has any valid elements
+		if(cookies.length == 1 && cookies[0].name == "" && cookies[0].value == undefined) {
+			return [];
+		}
+
 		return cookies;
 	},
 	// Gets the cookie with the name specified
