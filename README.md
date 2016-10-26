@@ -15,12 +15,12 @@ dc.remove('Token');
 ##Methods
 
 ####get(cookieName)
-returns a cookie object with two properties.
+returns a string of the cookie's value
 ```javascript
-{
- name: 'CookieName',
- value: 'Hash'
-}
+dc.set('cookie', 'h348fh39fskjh3')
+
+var cookie = dc.get('cookie')
+// cookie => 'h348fh39fskjh3'
 ```
 
 ####getAll()
