@@ -12,7 +12,7 @@ module.exports = {
 			}
 		})
 		// Check if cookies array has any valid elements
-		if(cookies.length == 1 && cookies[0].name == "" && cookies[0].value == undefined) {
+		if (cookies.length == 1 && cookies[0].name == "" && cookies[0].value == undefined) {
 			return [];
 		}
 
@@ -25,11 +25,14 @@ module.exports = {
 		// Finds the "AuthToken" cookie and returns it
 		let result;
 		cookies.forEach(cookie => {
-			if(cookie.name === cookieName){
+			if (cookie.name === cookieName){
 				result = cookie;
 			}
 		})
-		return result.value;
+		if (result)
+			return result.value;
+		else
+			return undefined;
 	},
 	// Sets a cookie with the desired information. Life is in minutes.
 	set: function(name, value, lifetime){
@@ -37,7 +40,7 @@ module.exports = {
 		var date = new Date();
 		date.setTime(date.getTime() + lifetime);
 		var cookie = `${name}=${value}; `;
-		if(lifetime) {
+		if (lifetime) {
 			console.log("lifetime", lifetime)
 			cookie += `expires=${date.toGMTString()}`;
 		}
