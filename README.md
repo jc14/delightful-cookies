@@ -1,6 +1,10 @@
 # delightful-cookies
 A standalone module for dealing with cookies client side.
 
+```javascript
+npm install delightful-cookies --save
+```
+
 ##Example
 ```javascript
 var dc = require('delightful-cookies');
